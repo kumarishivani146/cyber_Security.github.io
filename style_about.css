@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.c1{
+
+    background-image:url("Images/about-us.png");
+    background-size: 100% 100%;
+    
+}
+nav{
+    background-color: rgba(60,134,245,0.4);
+    height:5rem;
+}
+label.logo{
+    //opacity: 1;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 70px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    color:black;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width:952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .c1{
+        height:150px;
+    }
+}
+.about_label{
+    height:350px;
+    width:50%;
+    //border: 2px solid black;
+    margin: auto;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.content{
+    margin-top:50px;
+    width:100%;
+    //border: 1px solid black;
+}
+.con{
+    width:70%;
+    margin:auto;
+    margin-top:50px;
+    font-size: 18px;
+    line-height: 40px;
+    color: rgb(83, 82, 82);
+}
+.developer_team{
+    width:100%;
+    height:auto;
+}
+
+.developer_team header{
+    background-color:rgba(3, 32, 78, 0.4) ;
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height:auto;
+        background: black;
+        top:80px;
+        left: 0;
+        text-align: center;
+        left:-100%;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+    .about_label{
+        height:60px;
+    }
+    .ab{
+        height:20px;
+        font-size: 17px;
+    }
+    .con{
+        width: 80%;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .flip-card{
+        background-color:white ;
+    }
+}
+
+
+
+.developer_team{
+    background: white;
+    margin-bottom: 50px;
+}
+.card{
+    border: none;
+    background: #fff;
+}
+.card-body{
+    background-color: #bbb;
+}
+.img-area{
+    display: inline-block;
+    overflow: hidden;
+}
+.team-single:hover .side-two{
+    transform: rotateY(0deg);
+    border-radius: 5px;
+    height: ;
+}
+.team-single:hover .side-one{
+    transform: rotateY(180deg);
+}
+
+.content-area{
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+
+}
+
+.side-one{
+    position: relative;
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+    background-color: #bbb;
+
+}
+.side-two{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #bbb;
+    transform: rotateY(-180deg);
+}
+.side-one,
+.side-two{
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+
+.side-one .card,
+.side-two .card{
+    min-height: 312px ;
+    max-height: 350px;
+    background-color: #bbb;
+}
+.side-two .card a{
+    font-size: 18px;
+    color: brown;
+}

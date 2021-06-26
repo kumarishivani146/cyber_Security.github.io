@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="style_about.css">
+    <link rel="stylesheet" href="style_contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"> 
+    <title></title>
+    <style>
+    
+
+    nav{
+    background-color: rgba(60,134,245,0.4);
+    height:5rem;
+}
+label.logo{
+    //opacity: 1;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 70px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.active,a:hover{
+    color:black;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width:952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height:auto;
+        background: black;
+        top:80px;
+        left: 0;
+        text-align: center;
+        left:-100%;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+    
+}
+
+        
+        .small_heading{
+            text-align: center;
+            color:darkslateblue;
+            font-size:30px;
+            font-weight: bold;
+        }
+        .big_heading{
+            text-align: center;
+          margin-bottom: 50px;
+            font-size:50px;
+            
+            
+        }
+        .image{
+            width:100px;
+            height:100px;
+            margin:auto;
+        }
+            .gig{
+                text-align:center;
+                
+            }
+            .gig:hover{
+                color:blue;
+            }
+.qwe{
+    font-weight: bolder;
+    font-size:50px;
+    margin-top:10px;
+
+}
+.card1{
+    border:none;
+}
+.imge{
+    margin-left:80px;
+    width:100px;
+            height:100px;
+
+}
+.et{
+    text-align: center;
+    
+}
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image:url("https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336377_960_720.jpg");
+
+  /* Set a specific height */
+  height: 900px;
+
+  /* Position and center the image to scale nicely on all screens */
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+
+/* Place text in the middle of the image */
+
+ 
+        
+
+    </style>
+  </head>
+  <body>
+  
+     
+    <div class="hero-image">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">B-Blaze</label>
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">HOME</a>
+                </li>
+                <li>
+                    <a href="about_us.html" target="_blank">About</a>
+                </li>
+                <li>
+                    <a class="active" href="#">Services</a>
+                </li>
+                <li>
+                    <a href="contact_us.html" target="_blank">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+      </div>
+      <section>
+    <div class="container">
+        <div class="container">
+        <p class="small_heading">What We Offer</p>
+        <h1 class="big_heading">Information Security Services</h1>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="Images/Virtual-CISO_Home.png" class="card-img-top image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><p class="gig">Virtual CISO</p></h5>
+                  <p class="card-text"> We can act as your Virtual Chief Information Security Officer (vCISO), bringing specialized cyber security expertise to your organization, designing a mature cyber security program, and notably reducing risk. A dedicated CISO assigned to your organization that is not only affordable.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="Images/1.png" class="card-img-top image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><p class="gig">Cyber Security</p></h5>
+                  <p class="card-text">Our Cyber Security Consulting back your organization with years of experience working on projects for some of the world’s largest organizations. Tap into that expertise on demand to support your projects or as you implement technical controls.Our advisory services are designed to meet security.</p></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="Images/Penetration-Testing_home.png" class="card-img-top image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><p class="gig">Penetration Testing</p></h5>
+                  <p class="card-text">Our penetration testing team can identify cybersecurity vulnerabilities before an intruder has the opportunity to infiltrate your network or computer system. We’ll uncover weaknesses on your network or within applications and can work with you to remediate and reduce risk.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <img src="Images/1.png" class="card-img-top image" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><p class="gig">Network Security Monitoring</p></h5>
+                    <p class="card-text">Our 24x7 Cyber Security Operations Center puts state-of-the-art threat intelligence behind your business to detect attacks against critical assets before it leads to a data breach. Know what’s happening in real-time, with continual log retention and storage built right in.</p>
+                  </div>
+                </div>
+              </div>
+    </div>
+    <div class="container">
+        <h1 class="qwe" > <div class="wow fadeInDown box">
+            We’re not just protecting users, customers, and patients.  We’re protecting your business as well.</h1>
+          </div>
+    </div>
+    <div class="container wow fadeInRight box">
+            
+      
+      
+    <p>Our cyber security services offer tremendous monetary and non-monetary value within your organization. Minimally, an improvement in your security posture keeps confidential, classified, and proprietary business materials out of the hands of competitors. Beyond this, the right cyber security policies and protocols boost employee productivity by minimizing computer system downtime while optimizing your website’s uptime. As you shield computers and hardware from malware, you’re also improving equipment longevity and postponing replacement cost. And as you elevate consumer confidence, you’re better able to attract and retain new business.</p>
+    
+</div></section>
+    <section>
+        <div class="container">
+            <div class="container">
+            <p class="small_heading">Industry Expertise</p>
+            <h1 class="big_heading">Services by Industry</h1>
+            </div>
+    
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="Images/Healthcare.png" class="card-img-top image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><p class="gig">Healthcare</p></h5>
+                      <p class="card-text">Medical device security is a critical component within information assurance programs at hospitals worldwide. We work with facilities to ensure HITECH/HIPAA security programs meet the challenges involved.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="Images/Higher-Education.png" class="card-img-top image" alt="...">
+                    <div class="card-body"> <h5 class="card-title"><p class="gig">Higher Education</p></h5>We work in tandem with higher education facilities to meet their cybersecurity management and policy challenges, ensuring clients remain in compliance with privacy regulations including FERPA, FACTA, GLBA, and HIPAA.</p></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="Images/Banking.png" class="card-img-top image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><p class="gig">Banking</p></h5>
+                      <p class="card-text">We’re trusted by leading financial institutions that are required to meet FFIEC guidelines for information assurance and cybersecurity management, offering everything from penetration testing to monitoring of core banking software. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <img src="Images/Software.png" class="card-img-top image" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"><p class="gig">Software</p></h5>
+                        <p class="card-text">We provide cyber security services to protect Software as a Service (SaaS) solutions, safeguarding shared-service organizations from ongoing threats while elevating confidence for customers relying on those vendors to protect their data..</p>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="container wow slideInLeft box ">
+            <h1 class="qwe" >We can provide just the level of service you need. No more. No less.</h1>
+        </div>
+        <p class="wow slideInUp box">As a Managed Security Services Provider (MSSP), we offer on-demand expertise combined with the nonstop threat detection and response required to block attacks before they damage your business. Optimize efficiency while minimizing cost, gaining the backing you need when you need us the most. Monitor and analyze data and trends within a single unified dashboard, accessing logs at any time. We help organizations respond to threats faster and leverage the latest and most sophisticated cybersecurity technology while retaining a well-documented audit trail.</p>
+        
+      
+    <hr>
+    <div class="container et ">
+    <div class="fl-module fl-module-html fl-node-5b33f0059b47b" data-node="5b33f0059b47b">
+        <div class="fl-module-content fl-node-content">
+        <div class="fl-html">
+        <div itemscope="" itemtype="https://schema.org/ProfessionalService">
+        <img itemprop="image" src="https://www.cybersecurityservices.com/system/wp-content/uploads/2018/01/circle-icon.png" style="display:none;">
+        © Copyright 2021 - 2030 <span itemprop="name">Cyber Security Services</span>
+        <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">Business Address: <span itemprop="streetAddress">137 Commerce Park Drive Suite E4</span>, <span itemprop="addressLocality">Westerville</span>, <span itemprop="addressRegion">Ohio</span>, <span itemprop="postalCode">43082</span>, <span itemprop="addressCountry">US</span> |Tel: <span itemprop="telephone">1-800-390-1053</span> URL: <span itemprop="url">https://www.cybersecurityservices.com</span>|Email: <span itemprop="email">sales@cybersecurityservices.com</span>. </div>
+        <span itemprop="geo" itemscope="" itemtype="http://schema.org/GeoCoordinates">
+        <meta itemprop="latitude" content="40.140094">
+        <meta itemprop="longitude" content="-82.925039">
+        </span>
+        Business hours are <time itemprop="openingHours" datetime="Mo,Tu,We,Th,Fr,Sa,Su 12:00-12:00">24 Hours / 7 Days A Week</time>
+        </div>
+        <span class="rating-desc" itemscope="" itemtype="http://schema.org/Product">
+        <span itemprop="name">Cyber Security Services</span>
+        <span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating"> Rated <span itemprop="ratingValue">5</span> / 5 based on <span itemprop="reviewCount">5</span> reviews. | <a class="ratings" href="https://search.google.com/local/writereview?placeid=ChIJQyf1PJn1OIgRO1BKhKgrcrI">Review Us</a> </span>
+        </span>
+        </div>
+        </div>
+        </div>
+        <div class="fl-page-footer-widgets-container container">
+            <div class="fl-page-footer-widgets-row row">
+            <div class="col-sm-12 col-md-12 fl-page-footer-widget-col fl-page-footer-widget-col-1"><aside id="media_image-2" class="fl-widget widget_media_image"><img width="63" height="70" src="https://www.cybersecurityservices.com/system/wp-content/uploads/2018/01/logo_footer.png" class="image wp-image-16069  attachment-full size-full" alt="Cyber Security Services Logo" loading="lazy" style="max-width: 100%; height: auto;"></aside><aside id="nav_menu-2" class="fl-widget widget_nav_menu"><div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-16087" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-16087"><a href="https://www.cybersecurityservices.com/" aria-current="page" class="menu-image-title-after"><span class="menu-image-title">Cyber Security Services</span></a></li>
+            </ul></div></aside><aside id="custom_html-2" class="widget_text fl-widget widget_custom_html"><div class="textwidget custom-html-widget">2021 Cyber Security Services. All Rights Reserved.</div></aside></div> </div>
+            </div>
+    </div>
+  </div>
+    <!-- --------------------TopFooter------------------- -->
+    <div class="container-fluid" style="margin:0;padding:0;">
+    <footer class="full-footer">
+      <div class="container top-footer p-md-4 p-1">
+          <div class="row">
+              <div class="col-md-3 pr-4 pl-4">
+                  <!--<img class="img-fluid" src="images/Logo.png" alt="Logo">-->
+                  <p>
+                      My Channel is a Tech-Educational Channel / Platform / Blog / Medium for anyone and
+                      everyone ...<a href="#">Read more</a>...
+                  </p>
+
+                  <a style="color: whitesmoke;" class="p-1" href="https://www.facebook.com/agrawal.rudraksh/">
+                      <i class="fab fa-2x fa-facebook"></i></a>
+
+                  <a style="color: whitesmoke;" class="p-1" href="https://www.facebook.com/agrawal.rudraksh/">
+                      <i class="fab fa-2x fa-twitter"></i></a>
+
+                  <a style="color: whitesmoke;" class="p-1" href="https://www.facebook.com/agrawal.rudraksh/">
+                      <i class="fab fa-2x fa-instagram"></i></a>
+
+                  <a style="color: whitesmoke;" class="p-1" href="https://www.facebook.com/agrawal.rudraksh/">
+                      <i class="fab fa-2x fa-linkedin"></i></a>
+
+              </div>
+
+              <div class="col-md-3 pr-4 pl-4">
+                  <h3>Important Links</h3>
+                  <a href="#">Privacy policy</a><br>
+                  <a href="#">Blog Articles</a><br>
+                  <a href="#">Social Media</a><br>
+              </div>
+
+              <div class="col-md-3 pr-4 pl-4">
+                  <h3>Our Services</h3>
+                  <a href="webDesigning">Web Designing</a><br>
+                  <a href="webDevelopment">Web Development</a><br>
+                  <a href="SEOservices">SEO Services</a><br>
+                  <a href="softwareDevelopment">Software Development</a><br>
+                  <a href="mobileAppDevelopment">Mobile App Development</a><br>
+                  <a href="graphicDesigning">Graphic Designing</a><br>
+              </div>
+
+              <div class="col-md-3 pr-4 pl-4">
+                  <h3>Contact Us</h3>
+
+                  <a class="px-1 py-1" href="tel:+918349459435" target="blank"> <i class="fas fa-phone"></i> (+91)
+                      8349459435</a><br>
+
+                  <a class="px-1 py-1" href="mailto:agrawal.samrat11173@gmail.com" target="blank"> <i
+                          class="fas fa-envelope"></i> inquiry@gmail.com</a><br>
+
+                  <!-- This div container is for to handle responsiveness of the map -->
+                  <div class="embed-responsive embed-responsive-16by9">
+
+                      <!-- iframe is used to add maps. -->
+                      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117763.68784088007!2d75.
+                              79380958870763!3d22.7239574965716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240
+                              f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1606331549810!5m2!1sen!2sin"
+                          frameborder="0">
+                      </iframe>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- --------------------/TopFooter------------------- -->
+
+      <!-- --------------------BottomFooter------------------- -->
+      <div class="container-fluid bottom-footer pt-2">
+          <div class="row">
+              <div class="col-12 text-center">
+                  <p>Copyrights &#169 2020 - All rights reserved</p>
+                  <p style="font-size: 12px;">Developed by Rudraksh Agarwal</p>
+              </div>
+          </div>
+      </div>
+      <!-- --------------------/BottomFooter------------------- -->
+  </footer>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+    <script>
+        wow = new WOW(
+          {
+              boxClass:     'wow',      // default
+              animateClass: 'animated', // change this if you are not using animate.css
+              offset:       0,          // default
+              mobile:       true,       // keep it on mobile
+              live:         true        // track if element updates
+            }
+          )
+         wow.init();
+      </script>
+  </body>
+</html>

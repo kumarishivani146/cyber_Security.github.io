@@ -1,0 +1,156 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*........ invisible scrolls on body........*/
+body::-webkit-scrollbar {
+    width: 0px;
+     background: transparent; /* Chrome/Safari/Webkit */
+}
+
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+/*........ /invisible scrolls on body........*/
+
+#header-section{
+    background-image: url("Images/Cyber_Security.jpg");
+    
+    /* Full height */
+    height: 100vh;
+    width:100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------------------------------------------Top-Header----------------------------------------------- */
+#topHeader{
+    border-bottom: 1px solid #ebebeb;
+}
+
+#topHeader a{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.89rem;
+}
+/* -----------------------------------------------/Top-Header----------------------------------------------- */
+
+
+/* -----------------------------------------------Navigation-Menu/BottomHeader----------------------------------------------- */
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#navBar{
+    background-color: #0b131a60;
+}
+
+nav ul li a{
+    font-size: 1.1rem;
+    font-weight: 600; 
+}
+/* -----------------------------------------------/Navigation-Menu/BottomHeader----------------------------------------------- */
+
+/* -----------------------------------------------Start of home page hero section----------------------------------------------- */
+.top-hero-section{
+    color: white;
+    margin: 200px 120px;
+}
+
+.top-hero-section a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.quality-image{
+    width: 220px;
+}   
+
+/* Start of tablet styles  */
+@media only screen and (max-width:768px){
+  .top-hero-section{
+    margin:50px;
+    width:max-width;
+  }
+}
+
+/* Start of smaller tablets and mobile styles  */
+@media only screen and (max-width:600px){
+  .top-hero-section{
+    margin:20px;
+    width:max-width;
+  }
+  .top-hero-section h4{
+    font-size:20px;
+  }
+  .top-hero-section h2{
+    font-size:35px important;
+    font-weight: bolder;
+  }
+  .top-hero-section h5{
+    font-size:15px;
+  }
+}
+
+/* -----------------------------------------------/Start of home page hero section----------------------------------------------- */
+
+/* -----------------------------------------------About us - Breadcrumbs-section----------------------------------------------- */
+.breadcrumbs-section{
+  background-color: #e9ecef;
+}
+/* -----------------------------------------------/About us - Breadcrumbs-section----------------------------------------------- */
+
+
+/* -----------------------------------------------Contact us - Form-section----------------------------------------------- */
+.address p{
+  font-weight: 600;
+}
+
+.address a{
+  text-decoration: none;
+}
+
+.maps iframe{
+  border: 0;
+}
+/* -----------------------------------------------/Contact us - Form-section----------------------------------------------- */
+
+
+/* -----------------------------------------------Footer----------------------------------------------- */
+.full-footer{
+  background-color: #000000dc;
+}
+
+.top-footer p{
+  color: white;
+}
+
+.top-footer a{
+  color: white;
+  font-weight: 600;
+}
+
+.top-footer h3{
+  color: white;
+}
+
+.bottom-footer{
+  background-color: #00010256;
+}
+
+.bottom-footer p{
+  color: white;
+}
+
+/* -----------------------------------------------/Footer----------------------------------------------- */
+

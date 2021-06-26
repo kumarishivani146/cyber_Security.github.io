@@ -1,0 +1,68 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*........ invisible scrolls on body........*/
+body::-webkit-scrollbar {
+    width: 0px;
+     background: transparent; /* Chrome/Safari/Webkit */
+}
+
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+/*........ /invisible scrolls on body........*/
+
+#header-section{
+    background-image: url("Images/Cyber_Security.jpg");
+    
+    /* Full height */
+    background-size: 100% 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------------------------------------------Top-Header----------------------------------------------- */
+#topHeader{
+    border-bottom: 1px solid #ebebeb;
+}
+
+#topHeader a{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.89rem;
+}
+/* -----------------------------------------------/Top-Header----------------------------------------------- */
+
+
+/* -----------------------------------------------Navigation-Menu/BottomHeader----------------------------------------------- */
+
+.last_part{
+    height:auto;
+    margin-top: 190px;
+    padding-top: 20px;
+    background-color: #0b131a60;
+    position: relative;
+}
+@media (max-width:858px){
+    .last_part{
+        margin-top: 230px;
+    }
+}
+
+
+label.logo{
+    //opacity: 1;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
